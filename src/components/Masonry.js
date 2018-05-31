@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
+import Lazyload from 'react-lazyload';
 
 class Masonry extends Component {
   state = {
@@ -30,7 +31,7 @@ class Masonry extends Component {
         onMoveNextRequest={() =>
           this.setState({
             photoIndex: (photoIndex + 1) % images.length,
-          })}/>
+          })} />
     }
 
     return (
@@ -49,10 +50,18 @@ class Masonry extends Component {
                       {subCategory.name}
                     </span>
                   </div>
-                  <img
-                    src={subCategory.cover}
-                    alt={subCategory.name}
-                    width="100%" />
+                  {this.props.categoryIndex === 0
+                    ? <img
+                      src={subCategory.cover}
+                      alt={subCategory.name}
+                      width="100%" />
+                    : <Lazyload height={200}>
+                        <img
+                          src={subCategory.cover}
+                          alt={subCategory.name}
+                          width="100%" />
+                      </Lazyload>
+                  }
                 </div>
               ))}
             </div>

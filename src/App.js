@@ -8,6 +8,7 @@ import Masonry from './components/Masonry';
 import SideMenu from './components/SideMenu';
 import categories from './data/columnHelper';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
   }
 
   waypointEnter = (pos, { previousPosition, currentPosition }) => {
-    if (currentPosition == Waypoint.inside && previousPosition === Waypoint.below)
+    if (currentPosition === Waypoint.inside && previousPosition === Waypoint.below)
       this.setState({ activeLink: pos });
   };
 
@@ -40,7 +41,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.setState({ style: { transform: 'translateY(0)', color: 'white' } });
+    this.setState({ style: { transform: 'translateY(0)', opacity: 1 } });
     console.log(categories);
   }
 
@@ -54,7 +55,7 @@ class App extends Component {
           offsetYMax={0}
           offsetYMin={-5}
           styleOuter={{ position: 'relative', zIndex: 10 }}
-          styleInner={{ position: 'absolute' }}
+          styleInner={{ position: 'absolute', width: '100%' }}
           tag="div"
         >
           <MainSection>
@@ -69,7 +70,7 @@ class App extends Component {
                   onLeave={(props) => this.waypointLeave(index, props)}
                   bottomOffset="50%"
                 />
-                <Masonry category={category} />
+                <Masonry category={category} categoryIndex={index} />
               </React.Fragment>
             ))}
             <Waypoint
@@ -79,6 +80,7 @@ class App extends Component {
             />
             <Contact />
           </MainSection>
+          <Footer />
         </Parallax>
       </div>
     );
@@ -86,6 +88,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-

@@ -1,3 +1,13 @@
 .section__contact p {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 30px 0;
+}
+
+.social {
+  margin: 30px 0;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
 }

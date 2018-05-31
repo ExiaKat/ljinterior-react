@@ -6,10 +6,10 @@
 @import "./styles/Navigation.css";
 @import "./styles/MainSection.css";
 @import "./styles/SideMenu.css";
+@import "./styles/Contact.css";
 
 
 .App {
   margin: 0 auto;
   text-align: center;
 }
-
