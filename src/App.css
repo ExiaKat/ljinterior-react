@@ -1,0 +1,15 @@
+@import "./styles/normalize.css";
+@import "./styles/grid.css";
+@import "./styles/Base.css";
+@import "./styles/Carousel.css";
+@import "./styles/Masonry.css";
+@import "./styles/Navigation.css";
+@import "./styles/MainSection.css";
+@import "./styles/SideMenu.css";
+
+
+.App {
+  margin: 0 auto;
+  text-align: center;
+}
+

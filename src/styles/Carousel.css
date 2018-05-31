@@ -1,0 +1,50 @@
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+.single_slide {
+  overflow: initial;
+}
+
+.slides__container {
+  position: relative;
+}
+
+.slides__backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  z-index: 5;
+}
+
+.slides__greeting {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 50;
+}
+
+.slides__title {
+  font-size: 46px;
+  letter-spacing: 2px;
+  text-align: left;
+  transform: translateX(-30%);
+  color: transparent;
+  transition: all 2.5s ease-in
+}
+
+.slides__subtitle {
+  font-size: 20px;
+  text-align: left;
+  transform: translateX(30%);
+  color: transparent;
+  transition: all 2.5s ease-in
+}
+
+@media screen and (min-width: 700px) {
+  .single_slide {
+    height: 95vh;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../node_modules/react-image-lightbox/style.css";
+.row__projects {
+  width: 98%;
+  margin: 0 auto 10%;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.cover__photo {
+  border-radius: 3px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: background-color 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.mask:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+.mask:hover > .more {
+  border: 2px solid #70a1ff;
+  color: white;
+  transform: translateY(0);
+}
+
+.more {
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 5px;
+  color: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  transform: translateY(50%);
+  transition: all 600ms ease-out;
+}
+
+.row__projects img {
+  display: block;
+  border-radius: 3px;
+  transition: transform 200ms;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+}
+
+.section-title {
+  width: 80%;
+  font-size: 180%;
+  font-weight: bold;
+  padding: 0 0 20px;
+  border-bottom: 3px solid #ff6348;
+  margin: 30px auto 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
