@@ -50,6 +50,7 @@
 .menu-item {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   text-decoration: none;
+  text-transform: capitalize;
   padding: 0.8em;
   color: #b8b7ad;
   font-size: 1.15em;
