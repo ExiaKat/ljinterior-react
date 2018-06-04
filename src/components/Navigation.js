@@ -9,7 +9,7 @@ class Navigation extends Component {
     }
     return (
       <div className={className.join(' ')} style={this.props.style}>
-        <img className="logo" src="./images/unsplash.svg" alt="Lj Interior logo"/>
+        <img className="logo" src="./images/logo.svg" alt="Lj Interior logo"/>
         <Links activeLink={this.props.activeLink} />
       </div>
     );
