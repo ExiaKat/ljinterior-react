@@ -1,6 +1,7 @@
 import React from 'react';
+import { categoryNames as linkItems } from '../data/columnHelper';
 
-export const linkItems = ['design', 'wildlife', 'landscape', 'contact'];
+// export const linkItems = ['design', 'wildlife', 'landscape', 'contact'];
 
 const links = (props) => (
   <ul>
