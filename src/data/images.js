@@ -1,4 +1,9 @@
-export default {
+export const slides = [
+  './images/slides/slides1.jpg',
+  './images/slides/slides1.jpg'
+];
+
+const categories = {
   design: [
     {
       name: 'architecture',
@@ -300,4 +305,8 @@ export default {
       photos: ['https://images.unsplash.com/photo-1467825487722-2a7c4cd62e75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=abe012e4061cf70c906fec99381840c0&auto=format&fit=crop&w=1024&q=60']
     },      
   ],
-}
+};
+
+export const links = Object.keys(categories).concat('contact');
+
+export default categories;
