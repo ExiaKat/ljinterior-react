@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { elastic as Menu } from 'react-burger-menu';
-import { categoryNames as linkItems } from '../data/columnHelper';
+import { links as linkItems } from '../data/images';
 
 class SideMenu extends Component {
   render() {

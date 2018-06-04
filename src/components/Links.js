@@ -1,5 +1,5 @@
 import React from 'react';
-import { categoryNames as linkItems } from '../data/columnHelper';
+import { links as linkItems } from '../data/images';
 
 // export const linkItems = ['design', 'wildlife', 'landscape', 'contact'];
 
