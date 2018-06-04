@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import { slides } from '../data/images';
 
 class Carousel extends Component {
   render() {
@@ -24,12 +25,11 @@ class Carousel extends Component {
           <p className="slides__subtitle" style={this.props.style}>The power of imagination makes us infinite.</p>
         </div>
         <Slider {...settings}>
-          <div className="single_slide">
-            <img src='./images/slides/slides1.jpg' alt="" width="100%" />
-          </div>
-          <div className="single_slide">
-            <img src='./images/slides/slides2.jpg' alt="" width="100%" />
-          </div>
+          {slides.map(slide => (
+            <div className="single_slide">
+              <img src={slide} alt={slide} width="100%" />
+            </div>
+          ))}
         </Slider>
       </div>
     );
