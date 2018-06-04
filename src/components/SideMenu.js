@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { elastic as Menu } from 'react-burger-menu';
-import { linkItems } from './Links';
+import { categoryNames as linkItems } from '../data/columnHelper';
 
 class SideMenu extends Component {
   render() {
     return (
       <Menu>
-        {linkItems.map(link => <a key={link} className="menu-item" href="#">{link}</a>)}
+        {linkItems.map(link => <a key={link} className="menu-item" href={'#' + link}>{link}</a>)}
       </Menu>
     );
   }
