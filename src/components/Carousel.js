@@ -26,7 +26,7 @@ class Carousel extends Component {
         </div>
         <Slider {...settings}>
           {slides.map(slide => (
-            <div className="single_slide">
+            <div key={slide} className="single_slide">
               <img src={slide} alt={slide} width="100%" />
             </div>
           ))}
