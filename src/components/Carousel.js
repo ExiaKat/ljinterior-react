@@ -20,9 +20,10 @@ class Carousel extends Component {
       <div className="slides__container">
         <div className="slides__backdrop"></div>
         <div className="slides__greeting">
-          <h1 className="slides__title" style={this.props.style}>Imagination</h1>
-          <p className="slides__subtitle" style={this.props.style}>Never loose your passion.</p>
-          <p className="slides__subtitle" style={this.props.style}>The power of imagination makes us infinite.</p>
+          <img src="./images/logo.svg" alt="logo.svg" />
+          {/* <h1 className="slides__title" style={this.props.style}>LJ Interior Design</h1>
+          <p className="slides__subtitle" style={this.props.style}>Modern elegant design.</p>
+          <p className="slides__subtitle" style={this.props.style}>Don't let your imagination be your limit.</p> */}
         </div>
         <Slider {...settings}>
           {slides.map(slide => (
