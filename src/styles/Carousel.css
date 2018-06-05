@@ -49,9 +49,15 @@
   transition: all 2.5s ease-in
 }
 
-@media screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
   .single_slide {
     height: 95vh;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slides__greeting img {
+    display: none;
   }
 }

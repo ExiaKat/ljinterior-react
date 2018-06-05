@@ -51,8 +51,8 @@ class App extends Component {
         <Navigation className={this.state.className} activeLink={this.state.activeLink} />
         <Carousel style={this.state.style} />
         <Parallax
-          offsetYMax={0}
-          offsetYMin={-5}
+          offsetYMax={'0px'}
+          offsetYMin={'-65px'}
           styleOuter={{ position: 'relative', zIndex: 10 }}
           styleInner={{ position: 'absolute', width: '100%' }}
           tag="div"
