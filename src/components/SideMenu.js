@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { elastic as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { links as linkItems } from '../data/images';
 
 class SideMenu extends Component {

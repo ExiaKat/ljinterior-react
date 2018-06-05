@@ -40,6 +40,7 @@
   color: #b8b7ad;
   padding: 0.8em;
   height: 90%;
+  box-sizing: border-box;
 }
 
 /* Styling of overlay */
