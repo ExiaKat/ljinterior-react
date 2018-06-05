@@ -1,7 +1,7 @@
 .nav {
   width: 100%;
   margin: 0 auto;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
   display: flex;
   align-items: center;
   flex: 1;
@@ -40,7 +40,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-size: 100%;
-  color: black;
+  color: #57606f;
   border-radius: 5px;
   transition: 200ms;
   cursor: pointer;
@@ -51,7 +51,9 @@
 }
 
 .logo {
-  width: 40px;
+  height: 58px;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
 .active {

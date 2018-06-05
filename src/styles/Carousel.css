@@ -25,6 +25,13 @@
   z-index: 50;
 }
 
+.slides__greeting img {
+  height: 100px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, .6));
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .slides__title {
   font-size: 46px;
   letter-spacing: 2px;
