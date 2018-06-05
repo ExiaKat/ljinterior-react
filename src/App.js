@@ -42,7 +42,6 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({ style: { transform: 'translateY(0)', opacity: 1 } });
-    console.log(categories);
   }
 
   render() {
