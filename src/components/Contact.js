@@ -8,8 +8,10 @@ const contact = (props) => {
       <p>Email: lj.zhang@ljinterior.com.au</p>
       <p>Address: 1 Trueman Street, Bonnet Bay, Australia</p>
       <div className="social">
-        <img className="social-icon" src="./images/logo-facebook.svg" alt="Facebook" />
-        <img className="social-icon" src="./images/logo-linkedin.svg" alt="LinkedIn" />
+        <a href="https://www.facebook.com/RetailDesignSydney">
+          <img className="social-icon" src="./images/logo-facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.linkedin.com/in/Li-jun-zhang-b89865103"><img className="social-icon" src="./images/logo-linkedin.svg" alt="LinkedIn" /></a>
       </div>
     </div>
   );
