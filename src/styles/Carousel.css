@@ -27,7 +27,7 @@
 
 .slides__greeting img {
   height: 100px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, .6));
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, .6)); */
   padding: 20px;
   border-radius: 10px;
 }
