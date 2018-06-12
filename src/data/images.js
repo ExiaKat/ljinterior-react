@@ -244,6 +244,14 @@ const categories = {
         './images/renders/0014.jpg'
       ]
     },
+    {
+      name: 'Wok Master',
+      cover: './images/renders/0015.jpg',
+      photos: [
+        './images/renders/0015.jpg',
+        './images/renders/0016.jpg'
+      ]
+    },
   ],
   paintings: [
     {
