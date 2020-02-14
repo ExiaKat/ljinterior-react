@@ -7,6 +7,16 @@ export const slides = [
 const categories = {
   projects: [
     {
+      name: 'Just Cut',
+      cover: './images/projects/15Just Cut/001.jpeg',
+      photos: [
+        './images/projects/15Just Cut/001.jpeg',
+        './images/projects/15Just Cut/002.jpeg',
+        './images/projects/15Just Cut/003.jpeg',
+        './images/projects/15Just Cut/004.jpeg'
+      ]
+    },
+    {
       name: 'Fish & Co',
       cover: './images/projects/01Fish & Co - Tramshed Shopping Centre/001.jpg',
       photos: [
