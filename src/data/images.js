@@ -7,7 +7,7 @@ export const slides = [
 const categories = {
   projects: [
     {
-      name: 'Just Cut',
+      name: 'Just Cuts',
       cover: './images/projects/15Just Cut/001.jpeg',
       photos: [
         './images/projects/15Just Cut/001.jpeg',
